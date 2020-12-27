@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Страница приветствия</title>
+    <meta content="" name="author">
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta content="ie=edge" http-equiv="x-ua-compatible">
+    <link rel="shortcut icon" href="assets/img/favicon.png">
+    <link rel="stylesheet" href="https://opensource.keycdn.com/fontawesome/4.7.0/font-awesome.min.css" integrity="sha384-dNpIIXE8U05kAbPhy3G1cz+yZmTzA6CY8Vg/u2L9xRnHjJiAK76m2BIEaSEV+/aU" crossorigin="anonymous">
+    <link rel="stylesheet" href="/assets/css/foundation.css">
+    <link rel="stylesheet" href="/assets/css/setup.css">
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <script src="/assets/js/foundation.js" defer></script>
+    <script src="/assets/js/app.js" defer></script><!--[if lt IE 9]>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script><![endif]-->
+  </head>
+  <body>
+    <div class="preloader">
+      <div class="preloader__container">
+        <div class="preloader__container__block">
+          <div class="preloader__container__block__animation"></div>
+          <div class="preloader__container__block__percents js_percents">0%</div>
+        </div>
+      </div>
+    </div>
+    <section class="hero">
+      <div class="hero__parallax" id="parallax-mouse">
+        <div class="hero__parallax__layer"><img class="hero__parallax__layer-img" src="assets/img/parallax/parallax-2.png"></div>
+        <div class="hero__parallax__layer"><img class="hero__parallax__layer-img" src="assets/img/parallax/parallax-3.png"></div>
+        <div class="hero__parallax__layer"><img class="hero__parallax__layer-img" src="assets/img/parallax/parallax-4.png"></div>
+        <div class="hero__parallax__layer"><img class="hero__parallax__layer-img" src="assets/img/parallax/parallax-5.png"></div>
+        <div class="hero__parallax__layer"><img class="hero__parallax__layer-img" src="assets/img/parallax/parallax-6.png"></div>
+        <div class="hero__parallax__layer"><img class="hero__parallax__layer-img" src="assets/img/parallax/parallax-7.png"></div>
+        <div class="hero__parallax__layer"><img class="hero__parallax__layer-img" src="assets/img/parallax/parallax-8.png"></div>
+        <div class="hero__parallax__layer"><img class="hero__parallax__layer-img" src="assets/img/parallax/parallax-9.png"></div>
+        <div class="hero__parallax__layer"><img class="hero__parallax__layer-img" src="assets/img/parallax/parallax-10.png"></div>
+      </div>
+      <div class="buttonauth"><a class="buttonauth__link active-button" href="#" id="authorizationButton">Авторизоваться</a></div>
+      <div class="usercart">
+        <div class="usercart__rotate">
+          <div class="usercart-info_1">
+            <div class="usercart-info usercart-welcome"><img class="usercart__photo" src="/assets/img/me.jpg">
+              <div class="usercart-info__name usercart-info__name_28px">Михаил Журкин</div>
+              <div class="usercart-info__description usercart-info__description_col-ser">Личный сайт веб разработчика</div>
+              <div class="soclinks">
+                <ul class="soclinks__list">
+                  <li class="soclinks__list__item"><a class="soclinks__list__item__link soclinks__list__item__link_colbr" href="https://vk.com/id391548754" target="_blank"><i class="fa fa-vk fa-2x" aria-hidden="true"></i></a></li>
+                  <li class="soclinks__list__item"><a class="soclinks__list__item__link soclinks__list__item__link_colbr" href="https://github.com/michaelsmith1" target="_blank"><i class="fa fa-github-alt fa-2x" aria-hidden="true"></i></a></li>
+                  <li class="soclinks__list__item"><a class="soclinks__list__item__link soclinks__list__item__link_colbr" href="#" target="_blank"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="usercart__menu usercart__menu_1">
+              <ul class="usercart__menu__list">
+                <li class="usercart__menu__list__item"><a class="usercart__menu__list__item__link usercart__menu__list__item__link_first" href="works.html">Мои работы</a></li>
+                <li class="usercart__menu__list__item"><a class="usercart__menu__list__item__link" href="about.html">Обо мне</a></li>
+                <li class="usercart__menu__list__item"><a class="usercart__menu__list__item__link usercart__menu__list__item__link_last" href="blog.html">Блог</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="usercart-info_2">
+            <div class="usercart-info usercart-welcome usercart_auth">
+              <div class="title title_auth">Авторизуйтесь</div>
+              <form class="form__auth" id="authorization" method="post" action="">
+                <div class="tooltip_error tooltip_error-login">Вы не ввели логин</div>
+                <label class="form__lblmain form__lblmain_login"></label>
+                <input class="form__input form__input_main" id="input_login" placeholder="Логин" type="text" name="login">
+                <div class="tooltip_error tooltip_error-pswrd">Вы не ввели пароль</div>
+                <div class="tooltip_error tooltip_error-chec">Кто же вы?</div>
+                <label class="form__lblmain form__lblmain_pswrd"></label>
+                <input class="form__input form__input_main" id="input_pswrd" placeholder="Пароль" type="password" name="password">
+                <label class="form__lbl form__lbl__chec">
+                  <input class="form__chec form__chec_chel" id="chel" type="checkbox" name="chel"><span class="form__chec_s form__chec_chel_s">Я человек</span>
+                </label>
+                <div class="form__you">Вы точно не робот?</div>
+                <label class="form__lbl form__lbl__radio">
+                  <input class="form__chec form__chec__radio" id="no_robot" type="radio" name="robot" value="1"><span class="form__chec_s form__chec__radio_s">Да</span>
+                </label>
+                <label class="form__lbl form__lbl__radio">
+                  <input class="form__chec form__chec__radio" id="robot" type="radio" name="robot" value="0"><span class="form__chec_s form__chec__radio_s">Не уверен</span>
+                </label>
+                <div class="error__msg"></div>
+                <div class="usercart__menu">
+                  <ul class="usercart__menu__list">
+                    <li class="usercart__menu__list__item"><a class="usercart__menu__list__item__link usercart__menu__list__item__link_first" id="naglav" href="#">На главную</a></li>
+                    <li class="usercart__menu__list__item">
+                      <input class="usercart__menu__list__item__link usercart__menu__list__item__link_last" type="submit" name="send" value="Войти">
+                    </li>
+                  </ul>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="copyright">© Михаил Журкин | создано с любовью студентом LoftSchool | 2017</div>
+    </footer>
+  </body>
+</html>
